@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>Tinycell – Mobile Game Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Tinycell is a mobile game studio specializing in casual and puzzle games." />
+  <meta name="description" content="Tinycell is a mobile game development studio specializing in casual and puzzle games." />
 
   <style>
     body {
@@ -13,11 +13,12 @@
       background: #0b0f19;
       color: #e8eefc;
     }
+
     a { color: #9cc2ff; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
     .wrap {
-      max-width: 1080px;
+      max-width: 1120px;
       margin: 0 auto;
       padding: 56px 20px;
     }
@@ -26,37 +27,30 @@
       background: rgba(255,255,255,0.06);
       border: 1px solid rgba(255,255,255,0.12);
       border-radius: 20px;
-      padding: 36px;
+      padding: 40px;
     }
 
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 36px;
       flex-wrap: wrap;
       gap: 12px;
+      margin-bottom: 40px;
     }
 
     .logo {
       font-weight: 800;
       font-size: 22px;
-      letter-spacing: 0.4px;
     }
 
     h1 {
       font-size: 44px;
-      line-height: 1.1;
-      margin: 0 0 12px;
+      margin: 0 0 16px;
     }
 
-    h2 {
-      margin: 0 0 12px;
-    }
-
-    h3 {
-      margin: 0 0 8px;
-    }
+    h2 { margin: 0 0 16px; }
+    h3 { margin: 0 0 8px; }
 
     p {
       line-height: 1.65;
@@ -64,17 +58,10 @@
       color: rgba(232,238,252,0.9);
     }
 
-    ul {
-      margin: 8px 0 0 18px;
-    }
+    ul { margin: 8px 0 0 18px; }
+    li { margin: 6px 0; }
 
-    li {
-      margin: 6px 0;
-    }
-
-    .section {
-      margin-top: 48px;
-    }
+    .section { margin-top: 56px; }
 
     .btn {
       display: inline-block;
@@ -90,27 +77,30 @@
       filter: brightness(1.08);
     }
 
-    .muted {
-      font-size: 13px;
-      color: rgba(232,238,252,0.6);
-    }
-
     .games {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 48px;
+      gap: 56px;
       margin-top: 24px;
     }
 
     .game img {
       width: 100%;
-      max-width: 960px;
+      max-width: 1000px;
       border-radius: 18px;
       margin-bottom: 16px;
+      background: rgba(255,255,255,0.08);
+    }
+
+    .map {
+      margin-top: 24px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.12);
     }
 
     footer {
-      margin-top: 48px;
+      margin-top: 56px;
       font-size: 13px;
       color: rgba(232,238,252,0.6);
     }
@@ -132,9 +122,6 @@
 
       <!-- Hero -->
       <h1>Mobile Game Studio</h1>
-      <p class="muted">
-        Official website for Tinycell mobile games and developer contact.
-      </p>
 
       <!-- About -->
       <div class="section">
@@ -167,28 +154,76 @@
 
         <div class="games">
 
-          <!-- Game Item -->
+          <!-- GAME TEMPLATE (1~10) -->
+          <!-- Game 1 -->
           <div class="game">
-            <img src="games/game1_large.png" alt="Game Title">
-            <h3>Game Title</h3>
-            <p>
-              A casual or puzzle mobile game developed by Tinycell.
-              Designed for accessibility and high-quality gameplay.
-            </p>
-            <p>
-              <a class="btn" href="#" target="_blank">Play</a>
-            </p>
+            <img src="games/game1.png" alt="Game 1">
+            <h3>Game Title 1</h3>
+            <p>Short description for game 1 goes here.</p>
+            <p><a class="btn" href="#" target="_blank">Play</a></p>
           </div>
 
-          <!-- Game Item -->
           <div class="game">
-            <img src="games/game2_large.png" alt="Another Game">
-            <h3>Another Game</h3>
-            <p>
-              Another mobile title currently in development.
-              More details will be announced soon.
-            </p>
-            <p class="muted">Coming soon</p>
+            <img src="games/game2.png" alt="Game 2">
+            <h3>Game Title 2</h3>
+            <p>Short description for game 2 goes here.</p>
+            <p><a class="btn" href="#" target="_blank">Play</a></p>
+          </div>
+
+          <div class="game">
+            <img src="games/game3.png" alt="Game 3">
+            <h3>Game Title 3</h3>
+            <p>Short description for game 3 goes here.</p>
+            <p><a class="btn" href="#" target="_blank">Play</a></p>
+          </div>
+
+          <div class="game">
+            <img src="games/game4.png" alt="Game 4">
+            <h3>Game Title 4</h3>
+            <p>Short description for game 4 goes here.</p>
+            <p><a class="btn" href="#" target="_blank">Play</a></p>
+          </div>
+
+          <div class="game">
+            <img src="games/game5.png" alt="Game 5">
+            <h3>Game Title 5</h3>
+            <p>Short description for game 5 goes here.</p>
+            <p><a class="btn" href="#" target="_blank">Play</a></p>
+          </div>
+
+          <div class="game">
+            <img src="games/game6.png" alt="Game 6">
+            <h3>Game Title 6</h3>
+            <p>Short description for game 6 goes here.</p>
+            <p><a class="btn" href="#" target="_blank">Play</a></p>
+          </div>
+
+          <div class="game">
+            <img src="games/game7.png" alt="Game 7">
+            <h3>Game Title 7</h3>
+            <p>Short description for game 7 goes here.</p>
+            <p><a class="btn" href="#" target="_blank">Play</a></p>
+          </div>
+
+          <div class="game">
+            <img src="games/game8.png" alt="Game 8">
+            <h3>Game Title 8</h3>
+            <p>Short description for game 8 goes here.</p>
+            <p><a class="btn" href="#" target="_blank">Play</a></p>
+          </div>
+
+          <div class="game">
+            <img src="games/game9.png" alt="Game 9">
+            <h3>Game Title 9</h3>
+            <p>Short description for game 9 goes here.</p>
+            <p><a class="btn" href="#" target="_blank">Play</a></p>
+          </div>
+
+          <div class="game">
+            <img src="games/game10.png" alt="Game 10">
+            <h3>Game Title 10</h3>
+            <p>Short description for game 10 goes here.</p>
+            <p><a class="btn" href="#" target="_blank">Play</a></p>
           </div>
 
         </div>
@@ -197,13 +232,28 @@
       <!-- Contact -->
       <div id="contact" class="section">
         <h2>Contact</h2>
+
+        <p>
+          510 53 Digital-ro 31-gil, Guro-gu<br>
+          08375 Seoul, South Korea
+        </p>
+
         <p>
           Email:
           <a href="mailto:contact@tinycell.io">contact@tinycell.io</a>
         </p>
-        <p>
-          Location: South Korea
-        </p>
+
+        <!-- Map -->
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps?q=510+53+Digital-ro+31-gil,+Guro-gu,+Seoul&output=embed"
+            width="100%"
+            height="360"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
       </div>
 
       <!-- Footer -->
