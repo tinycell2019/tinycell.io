@@ -4,10 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Tinycell</title>
-
-  <!-- GitHub Pages/하위 경로에서 상대경로 안정화 -->
-  <base href="./" />
-
   <style>
     :root{
       --bg:#121829;
@@ -94,6 +90,8 @@
       color:var(--muted);
       font-size:14.5px;
     }
+
+    /* 이미지: 타이틀 아래 + 가로 꽉 차게 */
     .game a.imageLink{
       display:block;
       width:100%;
@@ -104,11 +102,11 @@
       height:auto;
       display:block;
     }
+
     .hint{
       margin-top:10px;
       font-size:13px;
       color:var(--muted);
-      line-height:1.5;
     }
 
     .contact{
@@ -156,13 +154,8 @@
 <body>
   <div class="wrap">
     <header>
-      <!-- 로고 -->
-      <img
-        class="logo"
-        src="./assets/tinycell.logo.png"
-        alt="Tinycell Logo"
-        onerror="this.onerror=null; this.alt='[Logo not found: ./assets/tinycell.logo.png]'; this.style.opacity=.35;"
-      />
+      <!-- 중요: index.html과 같은 폴더에 assets/가 있어야 함 -->
+      <img class="logo" src="./assets/tinycell.logo.png" alt="Tinycell Logo" />
 
       <div class="brand">
         <h1>Tinycell</h1>
@@ -190,6 +183,7 @@
       <h2>Games</h2>
 
       <div class="games">
+        <!-- 1) SLOT LIFE -->
         <article class="game">
           <div class="pad">
             <h3>SLOT LIFE : Jackpot Journey</h3>
@@ -199,14 +193,11 @@
             </p>
           </div>
           <a class="imageLink" href="https://play.google.com/store/apps/details?id=com.tinycell.slotlifejackpot&pcampaignid=web_share" target="_blank" rel="noopener">
-            <img
-              src="./assets/game.slotlife.png"
-              alt="SLOT LIFE : Jackpot Journey"
-              onerror="this.onerror=null; this.alt='[Image not found: ./assets/game.slotlife.png]'; this.style.opacity=.35;"
-            />
+            <img src="./assets/game.slotlife.png" alt="SLOT LIFE : Jackpot Journey" />
           </a>
         </article>
 
+        <!-- 2) Match Cat -->
         <article class="game">
           <div class="pad">
             <h3>Match Cat : Triple Matching</h3>
@@ -216,14 +207,11 @@
             </p>
           </div>
           <a class="imageLink" href="https://play.google.com/store/apps/details?id=com.tinycell.matchcat&pcampaignid=web_share" target="_blank" rel="noopener">
-            <img
-              src="./assets/game.matchcat.png"
-              alt="Match Cat : Triple Matching"
-              onerror="this.onerror=null; this.alt='[Image not found: ./assets/game.matchcat.png]'; this.style.opacity=.35;"
-            />
+            <img src="./assets/game.matchcat.png" alt="Match Cat : Triple Matching" />
           </a>
         </article>
 
+        <!-- 3) Watermelon Maker -->
         <article class="game">
           <div class="pad">
             <h3>Watermelon Maker : Fruit Merge</h3>
@@ -231,3 +219,45 @@
               “Watermelon Maker” is an addictive merge puzzle game where you combine small fruits to grow bigger fruits and ultimately create sweet, juicy watermelons.
               With simple controls, anyone can enjoy the game, yet strategic merging adds depth and challenge.
               Cute graphics and vibrant colors make every play visually delightful, and the satisfying merging animation gives a real sense of achievement and fun.
+            </p>
+          </div>
+          <a class="imageLink" href="https://play.google.com/store/apps/details?id=com.tinycell.watermelonmaker&pcampaignid=web_share" target="_blank" rel="noopener">
+            <img src="./assets/game.watermelonmaker.png" alt="Watermelon Maker : Fruit Merge" />
+          </a>
+        </article>
+      </div>
+
+      <div class="hint">
+        Tip: GitHub Pages/server는 파일명 대소문자를 구분합니다. assets 안의 실제 파일명과 src가 한 글자도 달라지면 깨져요.
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="contact">
+        <div class="contactRow">
+          <a class="pill" href="mailto:contact@tinycell.io">
+            <strong>Email</strong> contact@tinycell.io
+          </a>
+
+          <span class="pill">
+            <strong>Address</strong> 510 53 Digital-ro 31-gil, Guro-gu 08375 Seoul
+          </span>
+        </div>
+
+        <div class="map">
+          <iframe
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=510%2053%20Digital-ro%2031-gil,%20Guro-gu%2008375%20Seoul&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © Tinycell. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
